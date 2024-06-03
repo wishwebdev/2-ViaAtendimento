@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ªViaAtendimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container transparencia">
+        <h1>Solicitar <br> 2ª Via de Certidão</h1>
+        <form id="formulario">
+            <label for="Tipo de Registro">Selecione o tipo de registro:</label>
+            <div class="input">
+                <input type="radio" id="Tipo de Registro" name="Tipo de Registro" value="opcao1">
+                <label class="fonte-padrao" for="opcao1">(A) Nascimento</label>
+            
+                <input type="radio" id="Tipo de Registro" name="Tipo de Registro" value="opcao2">
+                <label class="fonte-padrao" for="opcao2">(B) Casamento</label>
+            
+                <input type="radio" id="Tipo de Registro" name="Tipo de Registro" value="opcao3">
+                <label class="fonte-padrao" for="opcao3">(C) Óbito</label>
+            </div>
 
+            <label for="$">Escolha um ato:</label>
+            <div class="input">
+                <input type="radio" id="Tipo de Registro" name="opcao" value="opcao1">
+                <label class="fonte-padrao" for="opcao1">PAGO</label>
+            
+                <input type="radio" id="Tipo de Registro" name="opcao" value="opcao2">
+                <label class="fonte-padrao" for="opcao2">NIHIL</label>
+            
+                <input type="radio" id="Tipo de Registro" name="opcao" value="opcao3">
+                <label class="fonte-padrao" for="opcao3">MINI</label>
+            </div>
+
+            <label for="Recibo nº">Qual o numero do recibo:</label>
+            <input type="text" id="Recibo nº" name="Recibo nº" required>
+
+            <label for="Lv. Fls. T.">Digite Livro, Folha e Termo do Registro no formato indicado.</label>
+            <input type="text" id="Lv. Fls. T." name="Lv. Fls. T." required placeholder="Lv.A69 Fls.70 T.1999">
+
+            <label for="Emissor">Quem vai fazer a segunda via?</label>
+            <select id="Emissor" name="Emissor" required>
+                <option value="DAVID">DAVID</option>
+                <option value="FELIPE">FELIPE</option>
+                <option value="FERNANDO">FERNANDO</option>
+                <option value="HENRIQUE">HENRIQUE</option>
+                <option value="KAUAN">KAUAN</option>
+                <option value="LEONARDO D.">LEONARDO D.</option>
+                <option value="VICTORE">VICTORE</option>
+                <option value="WELLINGTON">WELLINGTON</option>
+            </select>
+
+            <label for="Serviço">Escolha o modelo de Certidão</label>
+            <select id="Serviço" name="Serviço" required>
+                <option value="BREVE">BREVE</option>
+                <option value="INTEIROTEOR D.">INTEIROTEOR DIGITADO</option>
+                <option value="INTEIROTEOR F.">INTEIROTEOR FOTOCÓPIA</option>
+            </select>
+
+            <label for="Averbações">Qual a quantidade de averbações no registro?</label>
+            <input type="number" name="Averbações" id="Averbações" required placeholder="Digite o nº de Avb's sem contar com Avb de CPF">
+
+            <label for="Obs. do Pedido">Tem alguma observação nesse pedido?</label>
+            <textarea id="Obs. do Pedido" name="Obs. do Pedido" placeholder="Exemplos:
+            Anotar Óbito, deixei no Livro
+            Anotar Óbito dessa serventia
+            Preferencial
+            Vai aguardar
+            Volta depois
+            Foi em tal lugar
+            Vem retirar amanhã
+            Aguardando pagamento
+            Deixar com fulano
+            etc..."></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
